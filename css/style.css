@@ -7,6 +7,7 @@
   --light-grey: #f5f4fa;
   --white-text: #ffffff;
   --white-text-op60: rgba(255, 255, 255, 0.6);
+  --bg-white: #ffffff;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -24,7 +25,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 ul {
@@ -166,23 +166,40 @@ footer {
   color: var(--blue-text);
 }
 
+/* Секция "Герой" */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--dark-grey);
+}
+
 .hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: var(--dark-grey);
   color: var(--white-text);
 }
 
 .btn-order {
+  width: 200px;
+  height: 50px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: var(--white-text);
   background-color: var(--blue-text);
 }
@@ -192,7 +209,28 @@ footer {
   color: var(--black);
 }
 
+/* Секция "Преимущества" */
+
+.advantages {
+  padding: 94px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages-item:last-child {
+  margin-right: 0px;
+}
+
 .advantages .title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -206,10 +244,24 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: left;
   color: var(--grey-text);
 }
 
+/* Секция "Чем мы занимаемся" */
+.directions {
+  padding-top: 0;
+  padding-bottom: 79px;
+}
+
+.directions-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .directions-title {
+  padding-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -218,11 +270,46 @@ footer {
   color: var(--black-text);
 }
 
+.directions-item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.directions-item:last-child {
+  margin-right: 0px;
+}
+
+/* Секция "Наша команда" */
+
 .team {
+  padding: 94px;
   background-color: var(--light-grey);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+  background-color: var(--bg-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:last-child {
+  margin-right: 0px;
+}
+
+.team-item img {
+  margin-bottom: 30px;
+}
+
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -232,6 +319,7 @@ footer {
 }
 
 .team .member {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -241,6 +329,7 @@ footer {
 }
 
 .team .post {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -249,7 +338,18 @@ footer {
   color: var(--grey-text);
 }
 
+/* Footer */
+.footer {
+  padding: 60px;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .contacts-footer p {
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -257,8 +357,13 @@ footer {
   color: var(--white-text);
 }
 
+.contacts-footer .tel {
+  margin-bottom: 9px;
+}
+
 .contacts-footer .tel,
 .contacts-footer .mail {
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
