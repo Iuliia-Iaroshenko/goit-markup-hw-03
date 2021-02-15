@@ -172,8 +172,7 @@ footer {
 /* Секция "Герой" */
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
   text-align: center;
   background-color: var(--dark-grey);
 }
@@ -216,7 +215,7 @@ footer {
 /* Секция "Преимущества" */
 
 .advantages {
-  padding: 94px;
+  padding: 94px 0;
 }
 
 .advantages-list {
@@ -254,8 +253,7 @@ footer {
 
 /* Секция "Чем мы занимаемся" */
 .directions {
-  padding-top: 0;
-  padding-bottom: 79px;
+  padding: 0 0 79px;
 }
 
 .directions-list {
@@ -264,7 +262,7 @@ footer {
 }
 
 .directions-title {
-  padding-top: 0;
+  padding: 0 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -286,7 +284,7 @@ footer {
 /* Секция "Наша команда" */
 
 .team {
-  padding: 94px;
+  padding: 94px 0;
   background-color: var(--light-grey);
 }
 
@@ -310,6 +308,10 @@ footer {
 
 .team-item img {
   margin-bottom: 30px;
+}
+
+.team-text {
+  padding: 30px 30px;
 }
 
 .team-title {
@@ -344,7 +346,7 @@ footer {
 
 /* Footer */
 .footer {
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .logo-footer {
@@ -361,7 +363,7 @@ footer {
   color: var(--white-text);
 }
 
-.contacts-footer .tel {
+.footer-tel {
   margin-bottom: 9px;
 }
 
@@ -383,7 +385,7 @@ footer {
 /* Портфолио */
 
 .projects {
-  padding: 94px;
+  padding: 94px 0;
 }
 
 .buttons-list {
@@ -427,7 +429,7 @@ footer {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
+  padding: 0 0;
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
@@ -454,13 +456,12 @@ footer {
   margin-bottom: 0;
 }
 
-.card-item img {
-  margin-bottom: 20px;
+.card-txt-box {
+  padding: 20px 24px;
 }
 
 .card-title {
   margin-bottom: 4px;
-  padding: 0 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -469,8 +470,6 @@ footer {
 }
 
 .card-text {
-  margin-bottom: 20px;
-  padding: 0 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
